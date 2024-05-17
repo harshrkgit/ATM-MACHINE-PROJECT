@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="screen">
+            <div class="welcome">
+                <h1>Welcome to SBI</h1>
+                <h2 class="card">Card has been detected...</h2>
+                <p>Please Enter Your PIN</p>
+
+                <div class="form">
+                    <form action="">
+                        <input type="password" id="pin" maxlength="4">
+                        <button type="submit" id="pinBtn">Proceed</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="services">
+                <h1>Welcome to SBI banking</h1>
+                <h2>Choose from below services</h2>
+                <div class="servBtn">
+                    <button id="bal">Balance</button>
+                    <button id="depo">Deposit</button>
+                    <button id="withdraw">Withdrawal</button>
+                </div>
+            </div>
+            <div class="balance">
+                <h3>Welcome Harsh</h3>
+                <h4 class="balNo">Available balance : <span id="balAmt"> </span> </h4>
+                <h4>Account Type : Savings</h4>
+                <button class="back">Back</button>
+
+            </div>
+            <div class="depoPage">
+                <p>Please enter the amount and place the cash in the slot</p>
+                <div class="depoForm">
+                    <input type="number" id="depoVal">
+                    <button id="depoBtn">Confirm</button>
+                    <button class="back">Back</button>
+                </div>
+            </div>
+            <div class="success">
+                <h2>Your last transaction was successful</h2>
+                <div class="btns">
+                    <button id="vBal">View Balance</button>
+                    <button class="back">Back</button>
+                </div>
+
+
+            </div>
+            <div class="noBal">
+                <h2>Insufficient Balance in your Account !</h2>
+                <p>Transaction Declined.</p>
+                <button class="back">Back</button>
+
+            </div>
+            <div class="witdPage">
+                <p>Please enter the amount to withdraw </p>
+                <div class="witdForm">
+                    <input type="number" id="witdVal">
+                    <button id="witdBtn">Confirm</button>
+                    <button class="back">Back</button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
